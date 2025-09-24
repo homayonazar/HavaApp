@@ -127,19 +127,24 @@ function App() {
 
                 </div>
             </div>
-            <div className="bigScreens flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 text-white px-6 text-center ">
+            <div className="ffff  hide-above-500">
+                <div className="bigScreens relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 text-white px-6 text-center">
+                <div className="absolute inset-0 bg-gradient-to-tr from-blue-200 to-purple-400 opacity-20 animate-pulse -z-10 rounded-full"></div>
+
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-20 h-20 mb-6 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4h10a2 2 0 012 2v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6a2 2 0 012-2z" />
                 </svg>
 
                 <h1 className="text-3xl font-bold mb-4">Welcome to Weather App 🌤️</h1>
-                <p className="text-lg mb-6">To view the app, please open it in a mobile browser and tap the <b> "Add to Home Screen" </b> button. </p>
+
+                <p className="text-lg mb-6">
+                    To view the app, please open it in a mobile browser and tap the <b>"Add to Home Screen"</b> button.
+                </p>
 
                 <button className="bg-white text-blue-500 font-bold py-2 px-6 rounded-full shadow-lg hover:scale-105 transition-transform duration-300">
                     Got it!
                 </button>
-
-                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-tr from-blue-200 to-purple-400 opacity-20 -z-10 animate-pulse rounded-full"></div>
+            </div>
             </div>
 
 

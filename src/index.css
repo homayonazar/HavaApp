@@ -82,24 +82,24 @@ body {
 
 
 
-.hide-below-500 {
-  display: block !important;
+/* نمایش فقط برای صفحه‌های بالای 500px */
+.hide-above-500 {
+  display: block; /* پیش‌فرض برای بزرگ‌ترها */
 }
 
-@media (min-width: 499px) {
-  .hide-below-500 {
-    display: none !important;
+@media (max-width: 499px) {
+  .hide-above-500 {
+    display: none; /* زیر 500px مخفی می‌شود */
   }
 }
 
-/* ================ */
-
-.hide-above-500 {
-  display: block !important;
+/* نمایش فقط برای صفحه‌های پایین‌تر از 500px */
+.hide-below-500 {
+  display: block; /* پیش‌فرض برای کوچک‌ترها */
 }
 
-@media (min-width: 499px) {
-  .hide-above-500 {
-    display: none !important;
+@media (min-width: 500px) {
+  .hide-below-500 {
+    display: none; /* بالای 500px مخفی می‌شود */
   }
 }
