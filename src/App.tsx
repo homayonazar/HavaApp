@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import background from "./assets/images/bg.png";
-import magnifier from "./assets/icons/magnifier.png";
 
 // icons
 import sunIcon from "./assets/images/sun.png";
