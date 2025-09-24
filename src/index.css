@@ -6,7 +6,11 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
 
 }
 
@@ -73,7 +77,7 @@ body {
 
 
 * {
-    
+
     box-sizing: border-box;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 
@@ -84,22 +88,26 @@ body {
 
 /* نمایش فقط برای صفحه‌های بالای 500px */
 .hide-above-500 {
-  display: block; /* پیش‌فرض برای بزرگ‌ترها */
+    display: block;
+    /* پیش‌فرض برای بزرگ‌ترها */
 }
 
 @media (max-width: 499px) {
-  .hide-above-500 {
-    display: none; /* زیر 500px مخفی می‌شود */
-  }
+    .hide-above-500 {
+        display: none;
+        /* زیر 500px مخفی می‌شود */
+    }
 }
 
 /* نمایش فقط برای صفحه‌های پایین‌تر از 500px */
 .hide-below-500 {
-  display: block; /* پیش‌فرض برای کوچک‌ترها */
+    display: block;
+    /* پیش‌فرض برای کوچک‌ترها */
 }
 
 @media (min-width: 500px) {
-  .hide-below-500 {
-    display: none; /* بالای 500px مخفی می‌شود */
-  }
+    .hide-below-500 {
+        display: none;
+        /* بالای 500px مخفی می‌شود */
+    }
 }
