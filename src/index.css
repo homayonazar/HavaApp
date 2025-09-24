@@ -53,14 +53,6 @@ body {
     --textColor: #ffffff;
 }
 
-p,
-span,
-li,
-i,
-h3 {
-    color: var(--text);
-}
-
 
 
 .white-force {
@@ -81,9 +73,33 @@ h3 {
 
 
 * {
-    margin: 0px;
-    padding: 0px;
+    
     box-sizing: border-box;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 
+}
+
+
+
+
+.hide-below-500 {
+  display: block !important;
+}
+
+@media (min-width: 499px) {
+  .hide-below-500 {
+    display: none !important;
+  }
+}
+
+/* ================ */
+
+.hide-above-500 {
+  display: block !important;
+}
+
+@media (min-width: 499px) {
+  .hide-above-500 {
+    display: none !important;
+  }
 }
