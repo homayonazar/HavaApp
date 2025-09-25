@@ -9,11 +9,18 @@ export default defineConfig({
     react(),
     tailwindcss(),
     VitePWA({
-      registerType: "autoUpdate",
+      registerType: "autoUpdate", // همیشه Service Worker آپدیت شه
+      includeAssets: [
+        "favicon-16x16.png",
+        "favicon-32x32.png",
+        "apple-touch-icon.png",
+        "pwa-192x192.png",
+        "pwa-512x512.png"
+      ],
       manifest: {
         name: "Weather App",
         short_name: "Weather",
-        start_url: "/projects/weather/",
+        start_url: "/projects/weather/?v=" + new Date().getTime(),
         display: "standalone",
         background_color: "#ffffff",
         theme_color: "#0ea5e9",
@@ -21,23 +28,21 @@ export default defineConfig({
           {
             src: "/projects/weather/pwa-192x192.png",
             sizes: "192x192",
-            type: "image/png"
-          },
-          {
-            src: "/projects/weather/pwa-512x512.png",
-            sizes: "512x512",
-            type: "image/png"
+            type: "image/png",
           },
           {
             src: "/projects/weather/pwa-512x512.png",
             sizes: "512x512",
             type: "image/png",
-            purpose: "any maskable"
-          }
-        ]
-      }
-    })
-  ]
+          },
+          {
+            src: "/projects/weather/pwa-512x512.png",
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "any maskable",
+          },
+        ],
+      },
+    }),
+  ],
 });
-
-
