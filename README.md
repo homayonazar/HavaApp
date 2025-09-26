@@ -1,4 +1,4 @@
-# Hava App 🌤️
+# Hava App 🌤️ 
 
 Hava App is a modern **React + Vite** weather application that displays real-time weather information for any city. It’s fully responsive, includes dynamic weather icons, and is PWA-ready, so you can install it on your mobile device like a native app.
 
@@ -11,9 +11,8 @@ Hava App is a modern **React + Vite** weather application that displays real-tim
 - Blurred, fixed background with a clean UI.
 
 ## Demo
-Try the live demo here: [Hava App Live](https://yourusername.github.io/projects/weather/)  
-*(Replace the link above with your actual live demo URL.)*
-
+Try the live demo here: [Hava App Live](https://homayonazar.com/projects/weather/)  
+- Note : to view peoject : test it on your mobile device browser and click on 'Add To HomeScreen'
 ## Installation
 1. Clone the repository:
 ```bash
