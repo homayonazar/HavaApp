@@ -96,12 +96,10 @@ function App() {
                         placeholder="Search city"
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
-                        // Liquid Glass theme input
                         className="w-full max-w-sm h-11 rounded-lg px-5 text-base text-white placeholder-white/70 bg-white/10 backdrop-blur-md border border-white/20 shadow-md focus:outline-none focus:ring-2 focus:ring-white/40 transition"
                     />
                 </form>
 
-                {/* Main Content */}
                 <div className="flex flex-col items-center justify-center min-h-screen px-6 ">
                     <p className="text-3xl font-semibold tracking-wide drop-shadow-md"> {city} </p>
                     <img src={icon} className="w-40 my-6 drop-shadow-lg" alt="weather icon" />
@@ -131,6 +129,7 @@ function App() {
                 </div>
                 <p className=" fixed bottom-5 left-1/2 transform -translate-x-1/2 text-white text-sm text-center ">App version : 2.0</p>
             </div>
+            {/* Big Display  */}
             <div className="ffff  hide-above-500">
                 <div className="bigScreens relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 text-white px-6 text-center">
                     <div className="absolute inset-0 bg-gradient-to-tr from-blue-200 to-purple-400 opacity-20 animate-pulse -z-10 rounded-full"></div>
@@ -142,7 +141,7 @@ function App() {
                         To view the app, please open it in a mobile browser and tap the <b>"Add to Home Screen"</b> button.
                     </p>
                     <button className="bg-white text-blue-500 font-bold py-2 px-6 rounded-full shadow-lg hover:scale-105 transition-transform duration-300">
-                        Got it!
+                        Thanks
                     </button>
                 </div>
             </div>
