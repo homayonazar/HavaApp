@@ -16,4 +16,4 @@ Try the live demo here: [Hava App Live](https://homayonazar.com/projects/weather
 ## Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/hava-app.git
+git clone https://github.com/homayonazar/HavaApp.git
