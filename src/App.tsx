@@ -102,7 +102,7 @@ function App() {
                 </form>
 
                 {/* Main Content */}
-                <div className="flex flex-col items-center justify-center min-h-screen px-6 ">
+                <div className="flex flex-col items-center justify-center min-h-screen px-6  mt-4">
                     <p className="text-3xl font-semibold tracking-wide drop-shadow-md"> {city} </p>
                     <img src={icon} className="w-40 my-6 drop-shadow-lg" alt="weather icon" />
 
@@ -128,8 +128,33 @@ function App() {
                     <p className="text-sm opacity-80">
                         ☀️ Sunrise at <span className="font-medium">{sunrise}</span>
                     </p>
+                    <div className="forcast text-start self-start mt-4 ps-2">Daily Forecast</div>
+                    <div className="prediction flex flex-row justify-between gap-3 pt-5">
+                        <div className="c1 h-30 w-20 bg-gray-400/35 rounded-2xl flex flex-col items-center pt-2">
+                            <img src={sunIcon} className="w-3/4 " alt="" />
+                            <p>Friday</p>
+                            <p>31 C</p>
+                        </div>
+                        <div className="c2 h-30 w-20 bg-gray-400/35 rounded-2xl flex flex-col items-center pt-2">
+                            <img src={cloudIcon} className="w-3/4 " alt="" />
+                            <p>saturday</p>
+                            <p>10 C</p>
+                        </div>
+                        <div className="c3 h-30 w-20 bg-gray-400/35 rounded-2xl flex flex-col items-center pt-2">
+                            <img src={heavyrain} className="w-3/4 " alt="" />
+                            <p>Sunday</p>
+                            <p>28 C</p>
+                        </div>
+                        <div className="c4 h-30 w-20 bg-gray-400/35 rounded-2xl flex flex-col items-center pt-2">
+                            <img src={moderaterain} className="w-3/4 " alt="" />
+                            <p>Monday</p>
+                            <p>26 C</p>
+                        </div>
+                    </div>
                 </div>
-                <p className=" fixed bottom-5 left-1/2 transform -translate-x-1/2 text-white text-sm text-center ">App version : 2.0</p>
+
+
+                <p className=" fixed bottom-5 left-1/2 transform -translate-x-1/2 text-white text-sm text-center ">App version : 3.0</p>
             </div>
             <div className="ffff  hide-above-500">
                 <div className="bigScreens relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 text-white px-6 text-center">
