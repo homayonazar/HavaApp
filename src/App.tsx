@@ -79,10 +79,17 @@ function App() {
         <>
             <div className="relative min-h-screen text-white hide-below-500">
                 {/* Background Blur */}
-                <div
-                    className="fixed inset-0 bg-cover bg-center z-[-1]"
-                    style={{ backgroundImage: `url(${background})` }}
-                >
+                {/* Background Layer */}
+                <div className="fixed inset-0 -z-10 overflow-hidden">
+                    <div
+                        className="absolute inset-0 bg-cover bg-center"
+                        style={{
+                            backgroundImage: `url(${background})`,
+                            backgroundAttachment: "fixed",
+                            willChange: "transform",
+                            transform: "translateZ(0)", // for clear top section [clock behind] => [درواقع رند از پردازنده به گرافیک منتقل میشه تا روان اجرا بشه ]
+                        }}
+                    />
                     <div className="absolute inset-0 bg-black/10 backdrop-blur-2xl" />
                 </div>
 
@@ -129,7 +136,7 @@ function App() {
                         ☀️ Sunrise at <span className="font-medium">{sunrise}</span>
                     </p>
                     <div className="forcast text-start self-start mt-4 ps-2">Daily Forecast</div>
-                    <div className="prediction flex flex-row justify-between gap-3 pt-5">
+                    <div className="prediction flex flex-row justify-between gap-3 pt-5 ">
                         <div className="c1 h-30 w-20 bg-gray-400/35 rounded-2xl flex flex-col items-center pt-2">
                             <img src={sunIcon} className="w-3/4 " alt="" />
                             <p>Friday</p>

@@ -111,3 +111,8 @@ body {
         /* بالای 500px مخفی می‌شود */
     }
 }
+
+/* .bg-cover {
+  content-visibility: visible !important;
+  will-change: transform;
+} */
